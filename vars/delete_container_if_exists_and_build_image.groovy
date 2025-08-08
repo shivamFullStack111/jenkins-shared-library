@@ -6,5 +6,5 @@ def call(String DOCKER_CONTAINER_NAME,DOCKER_IMAGE_NAME){
     echo "No existing container..."
   fi
 
-  docker build -t ${DOCKER_IMAGE_NAME}
+  docker build -t ${DOCKER_IMAGE_NAME} .
 }
