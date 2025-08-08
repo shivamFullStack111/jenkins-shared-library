@@ -1,5 +1,5 @@
 def call(String DOCKER_CONTAINER_NAME,String DOCKER_IMAGE_NAME){
-  const containerName = sh(
+  def containerName = sh(
     script: "docker ps -a --name ${DOCKER_CONTAINER_NAME} --format '{{.Names}}'"
     returnStdout: true
   ).trim()
